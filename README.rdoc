@@ -1,3 +1,23 @@
-= gantt_planner
+= Redmine Planner Plugin
 
-Description goes here
+== Current version
+
+* Import planner files
+* French and english version
+
+== How to import planner file
+
+Planner file must follow planner exemple file available in the repository
+
+Must explanations will come in the next version
+
+== Dependencies
+
+* Redmine Rate plugin
+* Redmine Budget Plugin
+
+== Next versions
+
+* Check redmine plugins dependencies
+* Generate the planner file on demand and display informations on import success
+* Add a button to export a project, even if it has never been on planner
