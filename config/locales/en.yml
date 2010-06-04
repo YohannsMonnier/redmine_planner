@@ -1,0 +1,17 @@
+en:
+  import_project_from_planner: Import project from planner
+  xml_source_file: XML source file
+  importation_done: Import done
+  created_projects: Created projects
+  created_deliverables: Created deliverables
+  created_issues: Created issues
+  default_values_during_import: Default values during imports
+  default_user_role: User role
+  default_tracker_type: Tracker
+  default_task_priority: Task priority
+  customer_has_been_created: Customer has been created
+  unable_to_create_customer: Unable to create a Customer
+  the_customer: The customer
+  task_has_been_created: Task has been created
+  deliverable_has_been_created: Deliverable has been created
+  user: Utilisateur

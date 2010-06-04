@@ -1,0 +1,21 @@
+<% roles = Role.find_all_givable %>
+<% trackers = Tracker.all %>
+<% priorities = IssuePriority.all %>
+<fieldset>
+<h3><%= l(:default_values_during_import) %></h3>
+<% if roles %>
+	<p>
+	  <label><%= l(:default_user_role) %></label><%= select_tag ("settings[importer_role_id]", options_for_select(roles.collect {|p| [ p.name, p.id ] }, @settings['importer_role_id'].to_i() )) %>
+	</p>
+<% end %>
+<% if trackers %>
+	<p>
+	  <label><%= l(:default_tracker_type) %></label><%= select_tag ("settings[importer_tracker_id]", options_for_select(trackers.collect {|p| [ p.name, p.id ] }, @settings['importer_tracker_id'].to_i() )) %>
+	</p>
+<% end %>
+<% if priorities %>
+	<p>
+	  <label><%= l(:default_task_priority) %></label><%= select_tag ("settings[importer_priority_id]", options_for_select(priorities.collect {|p| [ p.name, p.id ] }, @settings['importer_priority_id'].to_i() )) %>
+	</p>
+<% end %>
+</fieldset>

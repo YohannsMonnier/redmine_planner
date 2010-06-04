@@ -1,0 +1,13 @@
+<% html_title l(:import_project_from_planner) -%>
+
+<h2><%= l(:import_project_from_planner) %></h2>
+
+<% form_tag({ :action => 'import', :id => 'import' }, :multipart => true, :class => "tabular") do %>
+	<div class="box">
+			<p><%=l(:label_attachment_plural)%><br /><%= render :partial => 'attachments/form' %></p>
+	</div>
+	<%= submit_tag l(:button_add) %>
+<% end %>
+
+
+
